@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kirim cerita tentang suara khas dari lingkunganmu ke Arsip Bunyi Nusantara.">
+  <title>Arsip Bunyi Nusantara — Kirim Cerita</title>
+</head>
+<body>
+  <header id="atas">
+    <p><strong>ABN / VOL. 01</strong> — Kontribusi pembaca</p>
+    <h1>Kirim Cerita Bunyi</h1>
+    <p>Satu suara kecil bisa menyimpan cerita yang besar.</p>
+    <nav aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a> |
+      <a href="atlas.html">Atlas Bunyi</a> |
+      <a href="kirim-cerita.html">Kirim Cerita</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section aria-labelledby="panduan">
+      <h2 id="panduan">Sebelum mengirim</h2>
+      <p>Ceritakan bunyi yang benar-benar kamu kenal. Tuliskan lokasi secara umum saja—hindari alamat rumah, nomor telepon, atau informasi pribadi orang lain. Mintalah izin sebelum merekam atau membagikan suara seseorang.</p>
+    </section>
+
+    <section aria-labelledby="formulir">
+      <h2 id="formulir">Formulir catatan lapangan</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Identitas kontributor</legend>
+          <p>
+            <label for="nama">Nama panggilan</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Raka" required>
+          </p>
+          <p>
+            <label for="email">Alamat email</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Detail bunyi</legend>
+          <p>
+            <label for="judul">Judul cerita</label><br>
+            <input type="text" id="judul" name="judul" placeholder="Contoh: Lonceng dari ujung gang" required>
+          </p>
+          <p>
+            <label for="lokasi">Kota atau wilayah umum</label><br>
+            <input type="text" id="lokasi" name="lokasi" placeholder="Contoh: Makassar, Sulawesi Selatan" required>
+          </p>
+          <p>
+            <label for="waktu">Kapan bunyi ini biasanya terdengar?</label><br>
+            <select id="waktu" name="waktu" required>
+              <option value="">Pilih waktu</option>
+              <option value="pagi">Pagi</option>
+              <option value="siang">Siang</option>
+              <option value="sore">Sore</option>
+              <option value="malam">Malam</option>
+              <option value="musiman">Musiman / acara tertentu</option>
+            </select>
+          </p>
+          <p>Jenis cerita:</p>
+          <input type="radio" id="tradisi" name="jenis" value="tradisi" required>
+          <label for="tradisi">Tradisi atau budaya</label><br>
+          <input type="radio" id="keseharian" name="jenis" value="keseharian">
+          <label for="keseharian">Kehidupan sehari-hari</label><br>
+          <input type="radio" id="nostalgia" name="jenis" value="nostalgia">
+          <label for="nostalgia">Kenangan / suara yang mulai hilang</label>
+          <p>
+            <label for="cerita">Ceritakan bunyinya dan kenapa itu penting</label><br>
+            <textarea id="cerita" name="cerita" rows="7" cols="45" placeholder="Apa yang terdengar? Dari mana sumbernya? Apa yang kamu rasakan atau ingat?" required></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="izin" name="izin" value="setuju" required>
+            <label for="izin">Saya memastikan cerita ini tidak melanggar privasi orang lain.</label>
+          </p>
+        </fieldset>
+        <p><button type="submit">Kirim catatan</button> <button type="reset">Kosongkan formulir</button></p>
+      </form>
+      <p><em>Catatan praktikum:</em> formulir ini merupakan demo HTML statis. Data belum dikirim atau disimpan ke server.</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><a href="atlas.html">← Jelajahi atlas bunyi</a> | <a href="index.html">Kembali ke beranda</a></p>
+    <p>© 2026 Arsip Bunyi Nusantara</p>
+  </footer>
+</body>
+</html>
